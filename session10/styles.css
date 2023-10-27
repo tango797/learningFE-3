@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .card {
+    background-color: #d3d3d3;
+    border-radius: 20px;
+  }
+  .content {
+    padding-left: 5%;
+    overflow: hidden;
+  }
+  input[type="text"],
+  select {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 8px 25%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  

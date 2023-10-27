@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 class="pb-2">book a session </h1>
+        <p>fill in the form below to book virtual session with a doctor </p>
+        
+        <form  id="meeting">
+            <h2>basic info</h2>
+             <label for="fullname">fullname</label>   
+            <input required type="text" name="fullName" id="fullname" class="form-control">
+            <label for="email">email</label>   
+            <input type="email" name="email" id="email" class="form-control">
+            <label for=""></label>
+            <select name="doctor" id="doctor" class="form-select" aria-label="Default select example">
+                <option value="" selected>select doctors</option>
+                <option value="ravi">dr ravi</option>
+                <option value="surbhi">dr surbhi</option>
+                <option value="himangi">dr Himangi</option>
+            </select>
+            <div id ='location'>
+                    <h3>Where?</h3>
+                    <label for="phone">phone</label>
+                <input type="radio" name="location" id="phone"  value="phone"/>
+                <label for="google-meet">google-meet</label>
+                <input type="radio" name="location" id="google-meet" value="google-meet" />
+               
+              </div>
+                <h3>when</h3>
+                <input type="datetime-local" name="Date" id="date"  class="form-control"/>
+                <button id="submit-btn" type="submit">submit</button>
+
+        </form>
+    </main>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
