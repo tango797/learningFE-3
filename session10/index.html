@@ -4,25 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Github Profiles</title>
+    <title>Weather App</title>
   </head>
+  <body>
+    <main class="app">
+      <h1>Weather App</h1>
+      <p class="subtitle">Search a city to see the current weather.</p>
 
-  <body class="">
-    <form id="form" class="form">
-      <input type="text" id="search" placeholder="Enter User Id" />
-    </form>
-    <main id="main ">
-      <div class="card">
-        <div class="card-body flex">
-          <div class="img" id="img">
+      <form id="weather-form" class="weather-form">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter city name"
+          required
+        />
+        <button type="submit">Get Weather</button>
+      </form>
 
-          </div>
-          <div class="content" id="content">
-            
-          </div>
-        </div>
-      </div>
+      <section id="result" class="result" aria-live="polite"></section>
     </main>
+
     <script src="./script.js"></script>
   </body>
 </html>
